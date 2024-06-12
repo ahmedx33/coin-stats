@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Start Body */
+body {
+  background-color: #000000;
+}
+
+/* End Body */
+
+/* Start Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100vh;
+}
+
+/* End Container */
+
+/*  Start Header */
+
+.container header {
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container header .logo {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+/*  End Header */
+
+/* Start Hero */
+
+.container .hero {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .hero .blured-img {
+  position: absolute;
+  width: 531px;
+  height: 531px;
+  z-index: -1;
+}
+
+.container .hero .blured-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .hero .blured-currency {
+  position: absolute;
+  width: 279.41px;
+  height: 157.01px;
+  z-index: -1;
+  bottom: 0;
+}
+
+.container .hero .blured-currency img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .hero h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 73.34px;
+  color: white;
+  text-align: center;
+  max-width: 872px;
+  width: 100%;
+  text-wrap: wrap;
+}
+
+.container .hero h1 span.gradient {
+  background: linear-gradient(92.28deg, #F7C33D 19.13%, #F637AB 54.48%, #8054FF 92.02%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.container .hero p {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #F5F5F5;
+  max-width: 707px;
+  width: 100%;
+}
+
+.container .hero .btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.container .hero .btns .btn1 {
+  width: 132px;
+  height: 48px;
+  border: 1px solid #000000;
+  background: #262532B2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.container .hero .btns .btn1 span {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+}
+
+.container .hero .btns .btn2 {
+  width: 132px;
+  height: 48px;
+  background: #FFFFFFCC;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.container .hero .btns .btn2 span {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* End Hero */
