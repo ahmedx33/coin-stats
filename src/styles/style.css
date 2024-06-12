@@ -358,6 +358,10 @@ body {
 
 /* Start Footer */
 .container footer {
+  position: relative;
+}
+
+.container .footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -413,6 +417,18 @@ body {
 
 .container .creator span a {
   text-decoration: underline !important;
+}
+
+.blured-color {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: fit-content;
+  transform: translateY(7rem);
+}
+
+.blured-color img {
+  width: 100%;
 }
 
 /* End Footer */
