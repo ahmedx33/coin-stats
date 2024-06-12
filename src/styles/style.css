@@ -146,11 +146,20 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.2s;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.container .hero .btns .btn1:hover {
+  background: #14141ab2;
 }
 
 .container .hero .btns .btn1 span {
@@ -168,6 +177,7 @@ body {
   background: #FFFFFFCC;
   display: flex;
   cursor: pointer;
+  transition: all 0.2s;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
@@ -175,6 +185,10 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.container .hero .btns .btn2:hover {
+  background: #b3b3b3cc;
 }
 
 .container .hero .btns .btn2 span {
@@ -247,12 +261,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s;
   cursor: pointer;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.container .section1 .title .btn:hover {
+  background: #b3b3b3cc;
 }
 
 .container .section1 .title .btn span {
