@@ -196,6 +196,24 @@ body {
   height: 100vh;
 }
 
+.container .section1 .left {
+  animation: fromLeftToRight 2s linear;
+  -webkit-animation: fromLeftToRight 2s linear;
+  /* animation-timing-function: linear; */
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation-play-state: paused;
+}
+
+.container .section2 .right {
+  animation: fromRightToLeft 2s linear;
+  animation-delay: 2;
+  -webkit-animation: fromRightToLeft 2s linear;
+  /*animation-timing-function: linear;
+  */
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation-play-state: paused;
+}
+
 .container .section1 .title h1 {
   font-weight: 700;
   font-size: 55px;
@@ -256,6 +274,12 @@ body {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   overflow: hidden;
+  animation: fromRightToLeft 2s linear;
+  -webkit-animation: fromRightToLeft 2s linear;
+  /*animation-timing-function: linear;
+  */
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation-play-state: paused;
 }
 
 .container .section1 .video video {
@@ -298,6 +322,14 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.container .section2 .phone {
+  animation: fromLeftToRight 2s linear;
+  -webkit-animation: fromLeftToRight 2s linear;
+  /* animation-timing-function: linear; */
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation-play-state: paused;
 }
 
 .container .section2 .phone .phone-img {
@@ -380,7 +412,7 @@ body {
 }
 
 .container .creator span a {
- text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 /* End Footer */
@@ -431,7 +463,62 @@ body {
   .colred {
     transform: translateY(-15rem);
   }
+}
 
+@media (prefers-reduced-motion: no-preference) {
+
+  .container .section1 .left,
+  .container .section1 .video,
+  .container .section1 .right,
+  .container .section2 .phone {
+    animation-play-state: running;
+
+  }
 }
 
 /* End Media queries */
+
+/* Start Animations */
+
+@keyframes fromLeftToRight {
+  from {
+    transform: translateX(-10vw);
+    opacity: 0;
+    -webkit-transform: translateX(-10vw);
+    -moz-transform: translateX(-10vw);
+    -ms-transform: translateX(-10vw);
+    -o-transform: translateX(-10vw);
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+
+@keyframes fromRightToLeft {
+  from {
+    transform: translateX(10vw);
+    opacity: 0;
+    -webkit-transform: translateX(10vw);
+    -moz-transform: translateX(10vw);
+    -ms-transform: translateX(10vw);
+    -o-transform: translateX(10vw);
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+/* End Animations */
