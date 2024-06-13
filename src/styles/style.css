@@ -1,3 +1,5 @@
+/* Start other */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,13 @@
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* End other */
 
 /* Start Utils */
 .text-gradient {
@@ -53,7 +62,7 @@ body {
   background-color: transparent;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .container header .logo {
@@ -253,7 +262,7 @@ body {
   margin-bottom: 20px;
 }
 
-.container .section1 .title .btn {
+.container .section1 .title .btn, .btn {
   margin-top: 20px;
   width: 132px;
   height: 48px;
@@ -270,11 +279,11 @@ body {
   -o-border-radius: 10px;
 }
 
-.container .section1 .title .btn:hover {
+.container .section1 .title .btn:hover, .btn:hover {
   background: #b3b3b3cc;
 }
 
-.container .section1 .title .btn span {
+.container .section1 .title .btn span, .btn span {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 700;
