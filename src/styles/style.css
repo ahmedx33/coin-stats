@@ -13,6 +13,10 @@ a {
   color: black;
 }
 
+img {
+  user-select: none;
+}
+
 /* End other */
 
 /* Start Utils */
@@ -485,7 +489,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: 100% !important;
     gap: 30px;
   }
@@ -508,7 +512,7 @@ body {
   }
 
   .container .section2 {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 30px;
     height: 100%;
   }
